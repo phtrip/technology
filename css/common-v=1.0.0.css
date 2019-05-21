@@ -809,7 +809,7 @@
 
 @media only screen and (max-width: 480px) {
     #advantage .product-list li {
-        width: 80%;
+        width: 90%;
     }
     .title-red {
         width: 100%!important;
