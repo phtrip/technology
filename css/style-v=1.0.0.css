@@ -362,7 +362,7 @@ canvas {
 		padding: 0!important
 	}
 	.nav-sec .navbar-nav>.active>a {
-    	background-color: #bb4242;
+    	background-color: #b9446a;
 	}
 	.nav-sec .open .dropdown-menu>li>a {
 		padding: 5px 20px;
@@ -3219,16 +3219,29 @@ a.demo {
 }
 
 @media only screen and (max-width:480px) {
-	.header-inner {
-	    margin: 0;
+	.fund-page #banner .overlay, 
+	.contact-us-page #banner .overlay, 
+	.about-us-page #banner .overlay, 
+	.join-us-page #banner .overlay {
+	    background-position: 0 50px!important;
+	}
+	.header-content h4 {
+	    margin: 7%;
+	}
+	#slider,
+	#banner {
+		margin-top: 50px;
 	}
 	.top-nav-collapse #tyLogo,
 	#tyLogo {
     	margin: 0 auto;
 	}
+	.nav-sec .navbar-toggle {
+	    padding: 11px 20px 0 5px;
+	}
 	.navbar-brand {
 	    float: none;
-	    margin: 8px auto 0;
+	    margin: 5px auto 0;
 	    display: block;
 	}
 	.btn-video-swiper span {
@@ -3284,12 +3297,15 @@ a.demo {
     	border: 1px solid #ff0000;
 		line-height: 30px;
     	flex-wrap: wrap;
+    	background-color: #efeff4;
 	}
-	.programme .tab button:first-child {
+	.programme .tab button:first-child,
+	.programme .tab a:first-child {
 		border-top-left-radius: 5px;
 		border-bottom-left-radius: 5px;
 	}
-	.programme .tab button:last-child {
+	.programme .tab button:last-child,
+	.programme .tab a:last-child {
 		border-top-right-radius: 5px;
 		border-bottom-right-radius: 5px;
 	}
@@ -3366,6 +3382,9 @@ a.demo {
 	}
 	#contact-us .code-qq {
 		margin-right: 10px;
+	}
+	.support .detail li:hover h6 {
+	    margin-top: 0;
 	}
 }
 @media only screen and (max-width: 330px) {
