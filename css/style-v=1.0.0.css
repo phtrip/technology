@@ -354,7 +354,9 @@ canvas {
 	.nav-sec .navbar-nav {
 		padding-left: 0;
 		width: 100%;
-		margin: 0
+		margin: 0;
+	    position: relative;
+	    z-index: 8;
 	} 
 	.nav-sec .navbar-nav>li>a {
 		line-height: 50px;
@@ -2992,7 +2994,8 @@ a.demo {
 		background: -o-linear-gradient(-45deg,#5f2c82,#ca4966);
 		background: linear-gradient(-45deg,#5f2c82,#ca4966);
 		margin-bottom: 0;
-		margin-top: 0
+		margin-top: 0;
+    	z-index: 4;
 	}
 
 	.navbar-collapse {
@@ -3228,6 +3231,7 @@ a.demo {
 	.header-content h4 {
 	    margin: 7%;
 	}
+	.join-us-page #banner .header-inner,
 	#slider,
 	#banner {
 		margin-top: 50px;
@@ -3242,6 +3246,7 @@ a.demo {
 	#staff .overlay {
 	    height: 430px;
 	}
+	#youshi .container,
 	#duty .container,
 	#staff .container {
     	padding-bottom: 50px;
@@ -3250,7 +3255,7 @@ a.demo {
 	    margin-bottom: 50px;
 	}
 	.nav-sec .navbar-toggle {
-	    padding: 11px 20px 0 5px;
+	    padding: 10px 0 0 0;
 	}
 	.navbar-brand {
 	    float: none;
@@ -3324,6 +3329,7 @@ a.demo {
 	}
 	.programme .tab a:hover, 
 	.programme .tab a.active, 
+	.programme .tab a:active, 
 	.programme .tab button:hover, 
 	.programme .tab button.active {
 	    background-color: #ff0000;
@@ -3398,6 +3404,22 @@ a.demo {
 	}
 	.support .detail li:hover h6 {
 	    margin-top: 0;
+	}
+	.dark {
+	    position: fixed;
+	    left: 0;
+	    top: 0;
+	    background: rgba(0, 0, 0, .5);
+	    width: 100%;
+	    height: 100%;
+	    z-index: 2;
+	    margin-top: 50px;
+	}
+	#location .swiper-button-prev {
+	    left: 0;
+	}
+	#location .swiper-button-next {
+	    right: 0;
 	}
 }
 @media only screen and (max-width: 330px) {
