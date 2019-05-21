@@ -3236,6 +3236,19 @@ a.demo {
 	#tyLogo {
     	margin: 0 auto;
 	}
+	#staff {
+		margin: 0;
+	}
+	#staff .overlay {
+	    height: 430px;
+	}
+	#duty .container,
+	#staff .container {
+    	padding-bottom: 50px;
+	}
+	#fund {
+	    margin-bottom: 50px;
+	}
 	.nav-sec .navbar-toggle {
 	    padding: 11px 20px 0 5px;
 	}
