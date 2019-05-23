@@ -53,7 +53,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="index.html" title="TY">
-                            <img src="img/logo.png" alt="TY Logo" id="tyLogo">
+                            <img class="lazy" src="img/placeholder.jpg" data-original="img/logo.png" alt="TY Logo" id="tyLogo">
                         </a>
                     </div>
                     <div class="navbar-collapse collapse">
@@ -131,7 +131,7 @@
                     </div>
                     <div class="col-md-7 col-sm-6">
                         <div class="photo-header">
-                            <img src="img/contact-youshi.jpg" alt="ty" class="img-responsive wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
+                            <img class="lazy" src="img/placeholder.jpg" data-original="img/contact-youshi.jpg" alt="ty" class="img-responsive wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
                         </div>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                 <div class="row">
                     <div class="col-md-7 col-sm-6">
                         <div class="photo-header">
-                            <img src="img/contact-product.jpg" alt="ty" class="img-responsive wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+                            <img class="lazy" src="img/placeholder.jpg" data-original="img/contact-product.jpg" alt="ty" class="img-responsive wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
                         </div>
                     </div>
                     <div class="col-md-5 col-sm-6">
@@ -213,7 +213,7 @@
                 <div class="row">
                     <div class="col-md-7 col-sm-6">
                         <div class="photo-header">
-                            <img src="img/contact-us.jpg" alt="ty" class="img-responsive wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
+                            <img class="lazy" src="img/placeholder.jpg" data-original="img/contact-us.jpg" alt="ty" class="img-responsive wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
                         </div>
                     </div>
                     <div class="col-md-5 col-sm-6">
@@ -227,11 +227,11 @@
                                 </h4>
                                 <div class="ercode clearfix">
                                     <div class="code-qq fl">
-                                        <img src="./img/contact-qq.jpg" alt="QQ：298738176">
+                                        <img class="lazy" src="img/placeholder.jpg" data-original="./img/contact-qq.jpg" alt="QQ：298738176">
                                         <p>QQ：298738176</p>
                                     </div>
                                     <div class="code-wx fl">
-                                        <img src="./img/contact-wechat.jpg" alt="微信：2987381790">
+                                        <img class="lazy" src="img/placeholder.jpg" data-original="./img/contact-wechat.jpg" alt="微信：2987381790">
                                         <p>微信：2987381790</p>
                                     </div>
                                 </div>
@@ -247,7 +247,7 @@
         <div class="container">
 
             <div class="logo-footer wow fadeInUp fl" data-wow-duration="1s">
-                <img src="img/favicon-white.png" alt="TY" title="TY">
+                <img class="lazy" src="img/placeholder.jpg" data-original="img/favicon-white.png" alt="TY" title="TY">
                 <span class="copyright">Copyright &copy; ©2019-2020 TY集团 保留所有权</span>
             </div>
             <div class="fr footer-menus">
@@ -271,6 +271,11 @@
     <script src="js/resize-v=1.0.0.js"></script>
     <script src="js/plugins-v=1.0.0.js"></script>
     <script src="js/custom-v=1.0.0.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('img').lazyload();
+        })
+    </script>
 </body>
 
 </html>

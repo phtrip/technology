@@ -53,7 +53,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="index.html" title="TY">
-                            <img src="img/logo.png" alt="TY Logo" id="tyLogo">
+                            <img class="lazy" src="img/placeholder.jpg" data-original="img/logo.png" alt="TY Logo" id="tyLogo">
                         </a>
                     </div>
                     <div class="navbar-collapse collapse">
@@ -128,8 +128,8 @@
                             <h5>移动广告：大数据，大机遇</h5>
                             <p>小工具是日常生活的重要组成部分，这就是为什么今天的消费者希望，通过任何设备提供无缝的多通道数字通信：PC，手机或平板电脑。为了吸引这些受众，TY集团提供全方位的移动广告机会，包括目标AD RBT（回铃音）和传统的A2P（“应用于人”）服务，这些都是大数据所馈赠。</p>
                             <div>
-                                <img src="img/fund-ad-left.jpg" alt="ty">
-                                <img src="img/fund-ad-right.jpg" alt="ty">
+                                <img class="lazy" src="img/placeholder.jpg" data-original="img/fund-ad-left.jpg" alt="ty">
+                                <img class="lazy" src="img/placeholder.jpg" data-original="img/fund-ad-right.jpg" alt="ty">
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
         <div class="container">
 
             <div class="logo-footer wow fadeInUp fl" data-wow-duration="1s">
-                <img src="img/favicon-white.png" alt="TY" title="TY">
+                <img class="lazy" src="img/placeholder.jpg" data-original="img/favicon-white.png" alt="TY" title="TY">
                 <span class="copyright">Copyright &copy; ©2019-2020 TY集团 保留所有权</span>
             </div>
             <div class="fr footer-menus">
@@ -167,6 +167,11 @@
     <script src="js/plugins-v=1.0.0.js"></script>
     <script src="js/custom-v=1.0.0.js"></script>
  
+    <script type="text/javascript">
+        $(function(){
+            $('img').lazyload();
+        })
+    </script>
 </body>
 
 </html>

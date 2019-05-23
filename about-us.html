@@ -53,7 +53,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="index.html" title="TY">
-                            <img src="img/logo.png" alt="TY Logo" id="tyLogo">
+                            <img class="lazy" src="img/placeholder.jpg" data-original="img/logo.png" alt="TY Logo" id="tyLogo">
                         </a>
                     </div>
                     <div class="navbar-collapse collapse">
@@ -127,7 +127,7 @@
                     </div>
                     <div class="col-md-7 col-sm-6">
                         <div class="photo-header">
-                            <img src="img/about-group.jpg" alt="ty" class="img-responsive wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
+                            <img class="lazy" src="img/placeholder.jpg" data-original="img/about-group.jpg" alt="ty" class="img-responsive wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="photo-header">
-                            <img src="img/about-left.jpg" alt="ty" class="img-responsive wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+                            <img class="lazy" src="img/placeholder.jpg" data-original="img/about-left.jpg" alt="ty" class="img-responsive wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
@@ -167,7 +167,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="photo-header">
-                            <img src="img/about-right.jpg" alt="ty" class="duty-img-right img-responsive wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+                            <img class="lazy" src="img/placeholder.jpg" data-original="img/about-right.jpg" alt="ty" class="duty-img-right img-responsive wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
                         </div>
                     </div>
                 </div>
@@ -181,7 +181,7 @@
                 <div class="row">
                     <div class="col-md-7 col-sm-6">
                         <div class="photo-header">
-                            <img src="img/about-staff.jpg" alt="ty" class="img-responsive wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+                            <img class="lazy" src="img/placeholder.jpg" data-original="img/about-staff.jpg" alt="ty" class="img-responsive wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
                         </div>
                     </div>
                     <div class="col-md-5 col-sm-6">
@@ -214,28 +214,28 @@
             <div class="detail">
                 <ul>
                     <li class="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
-                        <img class="bt" src="img/about-company-01.jpg" alt="">
+                        <img class="lazy" src="img/placeholder.jpg" data-original="img/about-company-01.jpg" alt="">
                         <div class="hover-cont">
                             <h6>激情</h6>
                             <p></p>
                         </div>
                     </li>
                     <li class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
-                        <img class="bt" src="img/about-company-02.jpg" alt="">
+                        <img class="lazy" src="img/placeholder.jpg" data-original="img/about-company-02.jpg" alt="">
                         <div class="hover-cont">
                             <h6>敬业</h6>
                             <p></p>
                         </div>
                     </li>
                     <li class="wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
-                        <img class="bt" src="img/about-company-03.jpg" alt="">
+                        <img class="lazy" src="img/placeholder.jpg" data-original="img/about-company-03.jpg" alt="">
                         <div class="hover-cont">
                             <h6>合作</h6>
                             <p></p>
                         </div>
                     </li>
                     <li class="wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
-                        <img class="bt" src="img/about-company-04.jpg" alt="">
+                        <img class="lazy" src="img/placeholder.jpg" data-original="img/about-company-04.jpg" alt="">
                         <div class="hover-cont">
                             <h6>创新</h6>
                             <p></p>
@@ -251,7 +251,7 @@
         <div class="container">
 
             <div class="logo-footer wow fadeInUp fl" data-wow-duration="1s">
-                <img src="img/favicon-white.png" alt="TY" title="TY">
+                <img class="lazy" src="img/placeholder.jpg" data-original="img/favicon-white.png" alt="TY" title="TY">
                 <span class="copyright">Copyright &copy; ©2019-2020 TY集团 保留所有权</span>
             </div>
             <div class="fr footer-menus">
@@ -276,6 +276,11 @@
     <script src="js/plugins-v=1.0.0.js"></script>
     <script src="js/custom-v=1.0.0.js"></script>
  
+    <script type="text/javascript">
+        $(function(){
+            $('img').lazyload();
+        })
+    </script>
 </body>
 
 </html>

@@ -53,7 +53,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="index.html" title="TY">
-                            <img src="img/logo.png" alt="TY Logo" id="tyLogo">
+                            <img class="lazy" src="img/placeholder.jpg" data-original="img/logo.png" alt="TY Logo" id="tyLogo">
                         </a>
                     </div>
                     <div class="navbar-collapse collapse">
@@ -128,8 +128,8 @@
                             <h5>跨境电商：时代的宠儿</h5>
                             <p>跨境电商是时代的产物，跨境电子商务是基于网络发展起来的，网络空间相对于物理空间来说是一个新空间，是一个由网址和密码组成的虚拟但客观存在的世界。网络空间独特的价值标准和行为模式深刻地影响着跨境电子商务，使其不同于传统的交易方式而呈现出新的活力。</p>
                             <div>
-                                <img src="img/fund-kjds-left.jpg" alt="ty">
-                                <img src="img/fund-kjds-right.jpg" alt="ty">
+                                <img class="lazy" src="img/placeholder.jpg" data-original="img/fund-kjds-left.jpg" alt="ty">
+                                <img class="lazy" src="img/placeholder.jpg" data-original="img/fund-kjds-right.jpg" alt="ty">
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
         <div class="container">
 
             <div class="logo-footer wow fadeInUp fl" data-wow-duration="1s">
-                <img src="img/favicon-white.png" alt="TY" title="TY">
+                <img class="lazy" src="img/placeholder.jpg" data-original="img/favicon-white.png" alt="TY" title="TY">
                 <span class="copyright">Copyright &copy; ©2019-2020 TY集团 保留所有权</span>
             </div>
             <div class="fr footer-menus">
@@ -166,6 +166,11 @@
     <!-- <script src="js/resize-v=1.0.0.js"></script> -->
     <script src="js/plugins-v=1.0.0.js"></script>
     <script src="js/custom-v=1.0.0.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('img').lazyload();
+        })
+    </script>
 </body>
 
 </html>

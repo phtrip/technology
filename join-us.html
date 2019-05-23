@@ -53,7 +53,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="index.html" title="TY">
-                            <img src="img/logo.png" alt="TY Logo" id="tyLogo">
+                            <img class="lazy" src="img/placeholder.jpg" data-original="img/logo.png" alt="TY Logo" id="tyLogo">
                         </a>
                     </div>
                     <div class="navbar-collapse collapse">
@@ -260,7 +260,7 @@
         <div class="container">
 
             <div class="logo-footer wow fadeInUp fl" data-wow-duration="1s">
-                <img src="img/favicon-white.png" alt="TY" title="TY">
+                <img class="lazy" src="img/placeholder.jpg" data-original="img/favicon-white.png" alt="TY" title="TY">
                 <span class="copyright">Copyright &copy; ©2019-2020 TY集团 保留所有权</span>
             </div>
             <div class="fr footer-menus">
@@ -297,6 +297,11 @@
         })
     </script>
  
+    <script type="text/javascript">
+        $(function(){
+            $('img').lazyload();
+        })
+    </script>
 </body>
 
 </html>
