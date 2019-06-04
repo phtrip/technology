@@ -45,20 +45,15 @@
         <div class="overlay">
             <nav class="navbar navbar-default nav-sec navbar-fixed-top">
                 <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+                    <div class="navbar-header nav-pc">
                         <a class="navbar-brand" href="index.html" title="TY">
                             <img src="img/logo.png" alt="TY Logo" id="tyLogo">
                         </a>
                     </div>
-                    <div class="navbar-collapse collapse">
-                        <div class="dark"></div>
+                    <div>
                         <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-mobile">
+                            </li>
                             <li class="active">
                                 <a href="index.html">
                                     <span>首页</span>
@@ -93,7 +88,7 @@
     <!-- 头部结束 -->
 
     <section id="slider" class="slider mt80">
-        <div class="video-box">
+        <div class="video-box show-pc">
             <div class="title txt">
                 <p class="wow fadeInLeft" data-wow-delay="0.2s">成就伙伴，成就梦想</p>
                 <span class="wow fadeInRight" data-wow-delay="0.2s">Your Success,Our Dream</span>
@@ -111,6 +106,18 @@
             <div class="swiper-btn-prev btn-video-swiper"><span></span></div>
             <div class="swiper-btn-next btn-video-swiper"><span></span></div>
         </div>
+        <div class="swiper-container swiper-container-top show-mobile">
+            <div class="txt-mobile">
+                <p class="wow fadeInLeft" data-wow-delay="0.2s">成就伙伴，成就梦想</p>
+                <span class="wow fadeInRight" data-wow-delay="0.2s">Your Success,Our Dream</span>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/home-banner-01-m.jpg"></div>
+                <div class="swiper-slide"><img src="./img/home-banner-02-m.jpg"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
     <!-- 轮播结束 -->
 
@@ -120,7 +127,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center wow fadeInUp" data-wow-delay="0.2s" data-wow-duration=".5s">
-                            <h3 text="集网络之成  融科技于身"></h3>
+                            <h3 class="show-pc" text="集网络之成  融科技于身"></h3>
                             <h2>集团简介</h2>
                             <span class="title-underline wow fadeInUp" data-wow-delay="0.4s" data-wow-duration=".5s">
                                  Group Introduction
@@ -131,12 +138,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row width90">
                     <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
                     </div>
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-3.5 col-sm-3 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="col-md-3.5 col-sm-3 wow fadeInUp show-pc" data-wow-delay="0.1s">
                                 <div class="single-info">
                                     <div class="icon-contact">
                                         <img class="lazy" src="img/placeholder.jpg" data-original="img/about-01.jpg" alt="">
@@ -156,7 +163,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3.5 col-sm-3 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="col-md-3.5 col-sm-3 wow fadeInUp show-pc" data-wow-delay="0.4s">
                                 <div class="single-info">
                                     <div class="icon-contact">
                                         <img class="lazy" src="img/placeholder.jpg" data-original="img/about-03.jpg" alt="">
@@ -186,7 +193,7 @@
                                     </div>
                                 </div>
                             </div>    
-                            <div class="col-md-3.5 col-sm-3 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="col-md-3.5 col-sm-3 wow fadeInUp show-pc" data-wow-delay="0.2s">
                                 <div class="single-info">
                                     <div class="icon-contact">
                                         <img class="lazy" src="img/placeholder.jpg" data-original="img/about-06.jpg" alt="">
@@ -206,7 +213,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3.5 col-sm-3 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="col-md-3.5 col-sm-3 wow fadeInUp show-pc" data-wow-delay="0.6s">
                                 <div class="single-info">
                                     <div class="icon-contact">     
                                         <img class="lazy" src="img/placeholder.jpg" data-original="img/about-08.jpg" alt="">
@@ -225,7 +232,7 @@
     <!-- 集团简介结束 -->
 
     <div id="location" class="location">
-        <div class="swiper-container swiper-location">
+        <div class="swiper-container swiper-location show-pc">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background: #1d2333 url('img/banner-01.jpg') no-repeat right center; height: 400px;">
                     <div class="container">
@@ -282,44 +289,91 @@
             <div class="swiper-btn-prev swiper-button-prev btn-bottom-swiper"><span></span></div>
             <div class="swiper-btn-next swiper-button-next btn-bottom-swiper"><span></span></div>
         </div>
+        <div class="overlay show-mobile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center wow fadeInUp" data-wow-delay="0.2s" data-wow-duration=".5s">
+                            <h3 class="show-pc" text="集网络之成  融科技于身"></h3>
+                            <h2>地理位置</h2>
+                            <span class="title-underline wow fadeInUp" data-wow-delay="0.4s" data-wow-duration=".5s">
+                                Geographical Position
+                            </span>
+                            <p class="details">Technet 集团坐落在马尼拉，菲律宾首都及第一大城市，
+                            是全世界最具国际化的城市之一， 同时也是全世界最多元化
+                            的城市之一， 被人们称为“亚洲的纽约”。是菲律宾的首都城
+                            市和最大的港口， 位于菲律宾最大岛屿－吕宋岛马尼拉湾东
+                            岸，也称“小吕宋”， 濒临天然的优良港湾 —— 马尼拉湾。
+                            可谓天高海阔，人间至美之境。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row width90">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3.5 col-sm-3 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="single-info">
+                                    <div class="icon-contact">
+                                        <img class="lazy" src="img/placeholder.jpg" data-original="img/location-m-01.jpg" alt="">
+                                        <img class="lazy" src="img/placeholder.jpg" data-original="img/location-m-02.jpg" alt="" style="margin-top: 10%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3.5 col-sm-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="single-info">
+                                    <div class="icon-contact">
+                                        <img class="lazy" src="img/placeholder.jpg" data-original="img/location-m-03.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- 地理位置结束 -->
  
     <div id="support" class="support">
         <div class="overlay">
-            <div class="title">
-                <h2>科技引领未来</h2>
-                <span class="title-underline wow fadeInUp" data-wow-delay="0.2s">
-                    Technology Leads the Future
-                </span>
-            </div>
-            <div class="detail">
-                <ul>
-                    <li class="wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="img/tech-01.jpg" alt="">
-                        <div class="hover-cont">
-                            <h6>融合通信</h6>
-                            <p>基于云托管解决方案，现在，在固定和移动网络上同时使用不同技术提供产品比以往任何时候都更加重要。TY通信是基于云托管解决方案的下一代服务交付平台，使用多年的VAS提供经验创建。</p>
-                        </div>
-                    </li>
-                    <li class="wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="img/tech-02.jpg" alt="">
-                        <div class="hover-cont">
-                            <h6>数字娱乐</h6>
-                            <p>如今，广泛开发的数字娱乐行业比以往任何时候都能覆盖更多的平台和用户。TY集团为电信服务提供商提供数字娱乐解决方案。
-                        </p>
-                        </div>
-                    </li>
-                    <li class="wow fadeInUp" data-wow-delay="0.6s">
-                        <img src="img/tech-03.jpg" alt="">
-                        <div class="hover-cont">
-                            <h6>移动商务</h6>
-                            <p>移动商务市场的蓬勃发展表明公司必须进入移动金融领域。无论您是需要开发移动钱包应用程序，还是为您的客户实施其他移动金融服务，TY团队都将提出并实施最佳解决方案。
-                        </p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="clr"></div>
+            <div class="container">
+                <div class="title">
+                    <h2>科技引领未来</h2>
+                    <span class="title-underline wow fadeInUp" data-wow-delay="0.2s">
+                        Technology Leads the Future
+                    </span>
+                </div>
+                <div class="detail">
+                    <ul>
+                        <li class="wow fadeInUp" data-wow-delay="0.2s">
+                            <img src="img/tech-01.jpg" alt="" class="show-pc">
+                            <div class="hover-cont">
+                                <h6>融合通信</h6>
+                                <p>基于云托管解决方案，现在，在固定和移动网络上同时使用不同技术提供产品比以往任何时候都更加重要。TY通信是基于云托管解决方案的下一代服务交付平台，使用多年的VAS提供经验创建。</p>
+                            </div>
+                            <img src="img/tech-m-01.jpg" alt="" class="show-mobile">
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="0.4s">
+                            <img src="img/tech-02.jpg" alt="" class="show-pc">
+                            <div class="hover-cont">
+                                <h6>数字娱乐</h6>
+                                <p>如今，广泛开发的数字娱乐行业比以往任何时候都能覆盖更多的平台和用户。TY集团为电信服务提供商提供数字娱乐解决方案。
+                            </p>
+                            </div>
+                            <img src="img/tech-m-02.jpg" alt="" class="show-mobile">
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="0.6s">
+                            <img src="img/tech-03.jpg" alt="" class="show-pc">
+                            <div class="hover-cont">
+                                <h6>移动商务</h6>
+                                <p>移动商务市场的蓬勃发展表明公司必须进入移动金融领域。无论您是需要开发移动钱包应用程序，还是为您的客户实施其他移动金融服务，TY团队都将提出并实施最佳解决方案。
+                            </p>
+                            </div>
+                            <img src="img/tech-m-03.jpg" alt="" class="show-mobile">
+                        </li>
+                    </ul>
+                    <div class="clr"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -436,6 +490,13 @@
     <script type="text/javascript">
         $(function(){
             $('img').lazyload();
+            var swiper = new Swiper('.swiper-container-top', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                loop: true,
+                autoplay: 2000,
+                autoplayDisableOnInteraction: false
+            });
         })
     </script>
 </body>
