@@ -333,6 +333,7 @@ canvas {
 	    background: -o-linear-gradient(-45deg,#499edb,#49cdf7);
 	    background: linear-gradient(-45deg,#499edb,#49cdf7 );
 	    height: 44px;
+	    min-height: 44px;
 	}
 	.swiper-btn-next,.swiper-btn-prev {
 		width: 40px!important;
@@ -3353,6 +3354,9 @@ h5 span {
 }
 
 @media only screen and (max-width:480px) {
+	.home-page #home .container {
+    	width: calc( 100% - 4px );
+	}
 	.about-us-page #banner .overlay,.contact-us-page #banner .overlay,.fund-page #banner .overlay,.join-us-page #banner .overlay {
 	    background-position: 0 44px!important;
 	    height: 221px;
