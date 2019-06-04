@@ -3260,6 +3260,10 @@ h5 span {
 }
 
 @media only screen and (max-width:769px) {
+	body {
+	    overflow-scrolling: touch;
+	    -webkit-overflow-scrolling: touch;
+	}
 	.video-box .title {
 		top: 10%!important
 	}
