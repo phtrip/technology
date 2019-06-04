@@ -759,8 +759,7 @@
 	}
 
 	.support .detail .hover-cont {
-		height: 100%;
-		background: rgba(0,0,0,.5)
+		height: 100%; 
 	}
 
 	.support .detail h6 {

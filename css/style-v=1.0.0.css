@@ -318,13 +318,21 @@ canvas {
 	font-size: 54px
 }
 
+.programme .detail table p {
+	text-indent: 0!important;
+}
+.programme .detail table th {
+	vertical-align: top;
+		min-width: 80px;
+}
 @media only screen and (max-width:767px) {
+	.top-nav-collapse,
 	.navbar-fixed-top {
 	    background: -webkit-linear-gradient(-45deg,#499edb,#49cdf7);
 	    background: -moz-linear-gradient(-45deg,#499edb,#49cdf7);
 	    background: -o-linear-gradient(-45deg,#499edb,#49cdf7);
 	    background: linear-gradient(-45deg,#499edb,#49cdf7 );
-	    min-height: 44px;
+	    height: 44px;
 	}
 	.swiper-btn-next,.swiper-btn-prev {
 		width: 40px!important;
@@ -3370,6 +3378,7 @@ h5 span {
 	}
 	.header-inner {
 	    margin: 22% 0 0 5%;
+	    background: none;
 	}
 	.header-content h1 {
 	    font-size: 28px;
@@ -3408,7 +3417,7 @@ h5 span {
 	#job-mobile .container,
 	.group-intro .container {
 	    background: #fff;
-	    width: 90%;
+	    width: 94%;
 	    margin: 0 auto;
 	    border-radius: 5px;
 	    padding: 15px 0;
@@ -3450,6 +3459,9 @@ h5 span {
 		height: 38px;
 		width: 5px;
 	}
+	#boon .overlay, 
+	#duty .overlay, 
+	.culture .overlay,
     #contact-us .overlay {
     	background: transparent;
     }
@@ -3458,18 +3470,31 @@ h5 span {
 	}
     .product-list,
     .width90 {
-    	width: 90%;
+    	width: 94%;
 	    margin: 0 auto;
     }
 	.header-content h4 {
     	color: #fff;
 		margin: 25px 0 0 0;
 		text-align: left;
-		font-size: 12px;
+		font-size: 12px!important;
 	    line-height: 16px;
+	    font-weight: normal;
 	}
+	#product .header-content h4,
+	 #staff .header-content h4,
+	#duty .header-content h4,
+	#company .header-content h4, 
+	#youshi .header-content h4 {
+        margin: 4%!important;
+	}
+	.header-content h4,
 	.programme .detail p {
 	    text-indent: 28px;
+    	font-size: 14px;
+	}
+	#banner .header-content h4  {
+	    text-indent: 0; 
 	}
 	#banner,#slider {
 		margin-top: 44px;
@@ -3477,12 +3502,7 @@ h5 span {
 
 	#tyLogo,.top-nav-collapse #tyLogo {
 		margin: 0 auto
-	}
-
-	#staff {
-		margin: 0
-	}
-
+	} 
 	#staff .overlay {
 		height: auto;
 		background: 0 0;
@@ -3498,7 +3518,7 @@ h5 span {
 	}
 
 	#fund {
-		margin-bottom: 50px
+		margin-bottom: 20px
 	}
 
 	.nav-sec .navbar-toggle {
@@ -3534,11 +3554,10 @@ h5 span {
 	    float: left;
 	    width: 50%!important;
 	    text-align: left;
-	    margin-top: 17px;
+	    margin-top: 2px;
 	    color: #999;
 		font-size: 12px;
-	}
-	.support .detail h6:after,
+	} 
 	.group-intro .single-info .info-text h4,
 	.title-underline:after,.title-underline:before {
 		display: none
@@ -3623,6 +3642,7 @@ h5 span {
     	clear: both;
     	text-align: left;
     	margin-bottom: 0;
+    	font-size: 12px;
 	}
 	#job-mobile .detail {
 		padding: 0 4%; 
@@ -3635,7 +3655,53 @@ h5 span {
 	.programme .detail img {
 	    width: 48%;
 	}
-
+	.support .detail li img,
+	.common-item .photo-header img,
+	.programme .detail img,
+	.single-info img {
+	    background-color: #efeff4;
+	    padding: 3px;
+	}
+	.common-item .photo-header img {
+    	margin: 0 auto!important;
+	    width: 92%;
+	    float: none!important;
+	    display: block;
+	}
+	.home-page .support .detail li img {
+		width: auto;
+	}
+	.home-page .support .detail li {
+	    background: #efeff4;
+	    display: flex;
+	    display: -webkit-flex;
+	    margin: 10px auto 0;
+	}
+	.home-page .support .detail .hover-cont {
+	    position: static;
+	    background: none;
+	    padding: 10px;
+	    color: #666;
+	}
+	.home-page .support .detail h6 {
+	    position: static;
+	    color: #333;
+	    font-size: 14px;
+	    text-align: left;
+	    margin-bottom: 8px;
+	}
+	.home-page .support .detail h6:after {
+		display: none;
+	}
+	.home-page .support .detail p {
+	    margin: 0;
+	    font-size: 12px;
+	}
+	.support .detail li:hover .hover-cont {
+		background: none;
+		height: auto;
+		border: none;
+	}
 	.programme .detail img:nth-child(odd) {
 		margin-right: 2%;
 	}
@@ -3645,7 +3711,8 @@ h5 span {
 	}
 
 	#boon .container li i {
-		float: left
+		float: left;
+    	margin: 15px;
 	}
 
 	#boon .container li span {
@@ -3661,7 +3728,7 @@ h5 span {
 		height: auto
 	}
 
-	#duty .photo-header img,#join-bottom li:nth-child(2) {
+	 #join-bottom li:nth-child(2) {
 		margin: 0
 	}
 
@@ -3718,7 +3785,7 @@ h5 span {
 	}
 
 	#contact-us .code-qq {
-		margin-right: 10px
+		margin-right: 19%
 	}
 
 	.support .detail li:hover h6 {
@@ -3758,14 +3825,20 @@ h5 span {
 	.section-title h2 {
 		text-align: left;
     	float: left;
-    	margin: 0 15px;
-	    font-size: 28px;
+    	margin: 0 15px; 
 	}
+	.support .title h2,
+	.section-title h2,
 	.programme .detail .tab-cont h5 {
 		position: relative;
     	font-size: 18px;
     	margin-top: 0;
 	}
+	.programme .detail .tab-cont h5 {
+		margin-bottom: 15px;
+	}
+	.support .title h2:after,
+	.section-title h2:after,
 	.contact-us-page .header-content h5:after,
 	.about-us-page .header-content h5:after, 
 	.programme .detail .tab-cont h5:after {
@@ -3798,39 +3871,20 @@ h5 span {
 		clear: both;
 	}
 	.support .detail li {
-		background: #efeff4;
-	    display: flex;
-	    display: -webkit-flex;
+		background: #efeff4; 
     	margin: 10px auto 0;
 	}
-	.support .detail li img {
-		width: auto;
+	.about-us-page .culture .detail li {
+		width: 47%!important;
 	}
-	.support .detail h6 {
-		position: static;
-		color: #333;
-		font-size: 20px;
-		text-align: left;
-    	margin-bottom: 5px;
-	}
-
-	.support .detail p {
-		margin: 0;    
-		font-size: 12px;
-	}
-	.support .detail .hover-cont {
-		position: static;
-		background: none;
-    	padding: 10px;
-		color: #666;
-	}
+ 
 	.support .overlay {
 		padding: 20px 0;
 	}
 	.product-show {
 	    background: #efeff4;
 	    box-sizing: border-box;
-	    padding: 20px 0;
+	    padding: 0;
 	}
 	#advantage .product-list li {
 		width: 48%;
@@ -3858,6 +3912,7 @@ h5 span {
 	.contact-us-page #contact-us .header-content h4 {
 	    margin: 15px 0 15px  10px;
 	    clear: both;
+	    text-indent: 0;
 	}
 	.common-item {
 	    margin: 20px 0 0 0;
@@ -3890,5 +3945,8 @@ h5 span {
 	.footer .copyright {
 		display: block;
 		margin: 15px 0 0 0!important
+	}
+	#contact-us .code-qq {
+	    margin-right: 6%;
 	}
 }
