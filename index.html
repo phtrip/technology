@@ -486,6 +486,8 @@
                 showSecond()
             }
         })
+
+        // 解决左右滑动
         var self = this;
         document.addEventListener('touchstart', (e) => {
           self.moveY = e.targetTouches[0].pageY;

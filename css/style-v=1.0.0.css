@@ -3354,6 +3354,9 @@ h5 span {
 }
 
 @media only screen and (max-width:480px) {
+	html, body { 
+	    -webkit-overflow-scrolling: touch;
+	}
 	.home-page #home .container {
     	width: calc( 100% - 4px );
 	}
