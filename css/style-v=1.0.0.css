@@ -3354,8 +3354,10 @@ h5 span {
 }
 
 @media only screen and (max-width:480px) {
-	html, body { 
-	    -webkit-overflow-scrolling: touch;
+	*{
+		-webkit-overflow-scrolling: touch;
+	}
+	html, body {
     	background: transparent;
 	}
 	.navbar-fixed-top {
