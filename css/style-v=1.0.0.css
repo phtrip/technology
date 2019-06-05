@@ -342,6 +342,7 @@ canvas {
 	.top-nav-collapse {
 		position: fixed;
 	}
+
 	.swiper-btn-next,.swiper-btn-prev {
 		width: 40px!important;
 		height: 40px!important;
