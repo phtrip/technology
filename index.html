@@ -32,7 +32,7 @@
     </style>
 </head>
 
-<body class="home-page" ontouchmove='return false;'>
+<body class="home-page">
 
     
     <!-- <div id="loading-mask">
@@ -486,9 +486,17 @@
                 showSecond()
             }
         })
-        document.ontouchmove  = function(e){
-            e.preventDefault() ; 
-        }
+        var self = this;
+        document.addEventListener('touchstart', (e) => {
+          self.moveY = e.targetTouches[0].pageY;
+        })
+        document.addEventListener('touchmove', (e) => {
+          e.preventDefault();
+          var moveWidth = self.moveY - e.targetTouches[0].pageY;
+          if (moveWidth !== 0) {
+            document.body.scrollTop += moveWidth;
+          }
+        })
     </script>
     <script type="text/javascript">
         $(function(){
